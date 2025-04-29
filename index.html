@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apotek Natur</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar-container">
+        <div class="logo">Apotek<span>Natur</span></div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="menu" id="menu">
+          <a href="#">Beranda</a>
+          <a href="#">Produk</a>
+          <a href="#">Promo</a>
+          <a href="#">Tentang Kami</a>
+          <a href="#">Kontak</a>
+          <a href="#">Login</a>
+        </nav>
+      </div>
+
+      <div class="carousel fade">
+        <img src="/image/1.png" class="active" alt="Banner 1" />
+        <img src="/image/3.png" alt="Banner 2" />
+        <img src="/image/2.png" alt="Banner 3" />
+        <img src="/image/4.png" alt="Banner 3" />
+      </div>
+    </header>
+
+    <section class="pilih-apotek slide-in">
+      <button>📍 Silakan Pilih Apotek <span class="ubah">Ubah</span></button>
+    </section>
+
+    <section class="layanan-terbaik fade">
+      <h2>Layanan Terbaik</h2>
+      <div class="layanan-grid">
+        <div class="layanan-item zoom">
+          <img src="/image/doktor.jpeg" alt="Konsultasi Dokter" />
+          <p>Konsultasi Dokter</p>
+        </div>
+        <div class="layanan-item zoom">
+          <img src="/image/apoteker2.jpeg" alt="Konsultasi Apoteker" />
+          <p>Konsultasi Apoteker</p>
+        </div>
+        <div class="layanan-item zoom">
+          <img src="/image/resep.jpeg" alt="Unggah Resep" />
+          <p>Unggah Resep</p>
+        </div>
+        <div class="layanan-item zoom">
+          <img src="/image/sck.jpeg" alt="Screening Kesehatan" />
+          <p>Screening Kesehatan</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="kategori slide-in">
+      <div class="kategori-header">
+        <h2>Cari Berdasarkan Kategori</h2>
+        <a href="#">Lihat Semua ></a>
+      </div>
+      <div class="kategori-grid">
+        <div class="kategori-item" onclick="kategoriKlik('Promo')">
+          <div class="kategori-icon">
+            <img src="/image/woods.jpeg" alt="Promo" />
+          </div>
+          <p>Obat Mata</p>
+        </div>
+        <div class="kategori-item" onclick="kategoriKlik('Susu')">
+          <div class="kategori-icon">
+            <img src="/image/susu.jpeg" alt="Susu" />
+          </div>
+          <p>Susu</p>
+        </div>
+        <div class="kategori-item" onclick="kategoriKlik('Vitamin')">
+          <div class="kategori-icon">
+            <img src="/image/fitness.jpeg" alt="Vitamin" />
+          </div>
+          <p>Vitamin</p>
+        </div>
+        <div class="kategori-item" onclick="kategoriKlik('Kontrasepsi')">
+          <div class="kategori-icon">
+            <img src="/image/herbal.jpeg" alt="Kontrasepsi" />
+          </div>
+          <p>Kontrasepsi</p>
+        </div>
+        <div class="kategori-item" onclick="kategoriKlik('Obat Batuk & flu')">
+          <div class="kategori-icon">
+            <img src="/image/woods.jpeg" alt="Obat Batuk & flu" />
+          </div>
+          <p>Obat Batuk & flu</p>
+        </div>
+        <div class="kategori-item" onclick="kategoriKlik('Obat Pencernaan')">
+          <div class="kategori-icon">
+            <img src="/image/artikel.jpeg" alt="Obat Pencernaan" />
+          </div>
+          <p>Obat Pencernaan</p>
+        </div>
+        <div class="kategori-item" onclick="kategoriKlik('Obat Alergi')">
+          <div class="kategori-icon">
+            <img src="/image/susu.jpeg" alt="Obat Alergi" />
+          </div>
+          <p>Obat Alergi</p>
+        </div>
+        <div class="kategori-item" onclick="kategoriKlik('Kecantikan')">
+          <div class="kategori-icon">
+            <img src="/image/fitness.jpeg" alt="Kecantikan" />
+          </div>
+          <p>Kecantikan</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-produk">
+      <div class="promo-header">
+        <h2>🎉 Promo Terbaru</h2>
+        <a href="#">Lihat Semua ></a>
+      </div>
+      <div class="produk-grid">
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/woods.jpeg" alt="Mylanta Cair" />
+          <p>WOODS CAIR 60ML</p>
+          <p class="harga-lama">Rp 18.400</p>
+          <p class="harga-promo">Rp 15.589</p>
+          <small>4.8 ★ Terjual 3rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/susu.jpeg" alt="Dulcolax Tablet" />
+          <p>SUSU KALENG ANAK</p>
+          <p class="harga-lama">Rp 100.099</p>
+          <p class="harga-promo">Rp 80.049</p>
+          <small>4.9 ★ Terjual 4rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/woods.jpeg" alt="Mylanta Cair" />
+          <p>WOODS CAIR 60ML</p>
+          <p class="harga-lama">Rp 18.400</p>
+          <p class="harga-promo">Rp 15.589</p>
+          <small>4.8 ★ Terjual 3rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/susu.jpeg" alt="Dulcolax Tablet" />
+          <p>SUSU KALENG ANAK</p>
+          <p class="harga-lama">Rp 100.099</p>
+          <p class="harga-promo">Rp 80.049</p>
+          <small>4.9 ★ Terjual 4rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/woods.jpeg" alt="Mylanta Cair" />
+          <p>WOODS CAIR 60ML</p>
+          <p class="harga-lama">Rp 18.400</p>
+          <p class="harga-promo">Rp 15.589</p>
+          <small>4.8 ★ Terjual 3rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/susu.jpeg" alt="Dulcolax Tablet" />
+          <p>SUSU KALENG ANAK</p>
+          <p class="harga-lama">Rp 100.099</p>
+          <p class="harga-promo">Rp 80.049</p>
+          <small>4.9 ★ Terjual 4rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/woods.jpeg" alt="Mylanta Cair" />
+          <p>WOODS CAIR 60ML</p>
+          <p class="harga-lama">Rp 18.400</p>
+          <p class="harga-promo">Rp 15.589</p>
+          <small>4.8 ★ Terjual 3rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/susu.jpeg" alt="Dulcolax Tablet" />
+          <p>SUSU KALENG ANAK</p>
+          <p class="harga-lama">Rp 100.099</p>
+          <p class="harga-promo">Rp 80.049</p>
+          <small>4.9 ★ Terjual 4rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/woods.jpeg" alt="Mylanta Cair" />
+          <p>WOODS CAIR 60ML</p>
+          <p class="harga-lama">Rp 18.400</p>
+          <p class="harga-promo">Rp 15.589</p>
+          <small>4.8 ★ Terjual 3rb+</small>
+        </div>
+        <div class="produk-item">
+          <span class="label-promo">Promo</span>
+          <img src="/image/susu.jpeg" alt="Dulcolax Tablet" />
+          <p>SUSU KALENG ANAK</p>
+          <p class="harga-lama">Rp 100.099</p>
+          <p class="harga-promo">Rp 80.049</p>
+          <small>4.9 ★ Terjual 4rb+</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="tentang-apotek container-ta">
+      <div class="tentang-grid">
+        <div class="tentang-text">
+          <h2>Apotek Natur – Solusi Kesehatan Alami, Cepat, dan Terpercaya!</h2>
+          <p>
+            Apotek Natur adalah apotek online terpercaya yang mengutamakan
+            pelayanan kesehatan berbasis produk alami dan farmasi modern. Kami
+            hadir untuk memenuhi kebutuhan Anda akan obat-obatan, vitamin,
+            suplemen herbal, serta berbagai produk kesehatan lainnya, dengan
+            layanan pengiriman cepat dan aman langsung ke lokasi Anda.
+          </p>
+          <p>
+            Didukung oleh jaringan apotek resmi yang tersebar di berbagai kota,
+            Apotek Natur siap melayani pembelian obat bebas, obat resep melalui
+            fitur unggah resep, serta menyediakan layanan konsultasi kesehatan
+            dengan tenaga farmasi profesional.
+          </p>
+          <p>
+            Dengan motto
+            <strong>"Kesehatan Alami, Hidup Lebih Harmonis"</strong>, Apotek
+            Natur beroperasi 24 jam secara online, memastikan Anda dapat
+            mengakses produk dan layanan kesehatan kapan saja dibutuhkan.
+            Rasakan kemudahan berbelanja produk kesehatan terpercaya hanya di
+            Apotek Natur!
+          </p>
+        </div>
+        <div class="tentang-gambar">
+          <img
+            id="gambar-berganti"
+            src="/image/doktor.jpeg"
+            alt="Kesehatan Alami"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="artikel-kesehatan container">
+      <h2>Artikel Kesehatan Terbaru</h2>
+      <div class="artikel-grid">
+        <div class="artikel-card">
+          <img src="/image/artikel.jpeg" alt="Tips Imun Tubuh" />
+          <div class="artikel-content">
+            <h3>5 Tips Meningkatkan Imunitas Tubuh</h3>
+            <p>
+              Pelajari cara sederhana menjaga daya tahan tubuh tetap optimal
+              sepanjang hari.
+            </p>
+            <a href="#" class="btn-baca">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <div class="artikel-card">
+          <img src="/image/fitness.jpeg" alt="Manfaat Vitamin C" />
+          <div class="artikel-content">
+            <h3>Manfaat Vitamin C untuk Kesehatan Kulit</h3>
+            <p>
+              Selain menjaga daya tahan tubuh, Vitamin C juga berperan penting
+              dalam menjaga kulit sehat dan cerah.
+            </p>
+            <a href="#" class="btn-baca">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <div class="artikel-card">
+          <img src="/image/herbal.jpeg" alt="Obat Herbal" />
+          <div class="artikel-content">
+            <h3>Obat Herbal: Pilihan Aman untuk Pengobatan Ringan</h3>
+            <p>
+              Kenali berbagai jenis obat herbal yang aman dan efektif untuk
+              digunakan sehari-hari.
+            </p>
+            <a href="#" class="btn-baca">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Ikuti Kami -->
+        <div class="footer-section">
+          <h4>Ikuti Kami</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fa-solid fa-globe-asia"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+
+          <!-- Add download aplikasi section here -->
+          <div class="download-app">
+            <p>Download Aplikasi Apotek Natur:</p>
+            <div class="download-btns">
+              <a href="#" class="download-btn">
+                <img src="/image/googleplay.jpeg" alt="Google Play" />
+              </a>
+              <a href="#" class="download-btn">
+                <img src="/image/appstore.jpeg" alt="App Store" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigasi -->
+        <div class="footer-section">
+          <h4>Navigasi</h4>
+          <div class="footer-nav-dual">
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Produk</a></li>
+              <li><a href="#">Promo</a></li>
+              <li><a href="#">Artikel</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Kebijakan</a></li>
+              <li><a href="#">Pengiriman</a></li>
+              <li><a href="#">Bantuan</a></li>
+              <li><a href="#">Afiliasi</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Kontak -->
+        <div class="footer-section">
+          <h4>Kontak Kami</h4>
+          <div class="footer-kontak">
+            <p>
+              <i class="fa-solid fa-location-dot"></i> Jl. Sehat No. 24, Jakarta
+            </p>
+            <p><i class="fa-solid fa-envelope"></i> support@apoteknatur.com</p>
+            <p><i class="fa-solid fa-phone"></i> +62 812-3456-7890</p>
+            <p><i class="fa-solid fa-clock"></i> 24 Jam Nonstop</p>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+          <h4>Langganan</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Masukkan Email" required />
+            <button type="submit">Langganan</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Testimoni -->
+      <div class="testimonial-container">
+        <p class="testimonial-text">
+          "Pelayanan cepat dan terpercaya! Apotek Natur terbaik."
+        </p>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 Apotek Natur | All Rights Reserved</p>
+      </div>
+
+      <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    </footer>
+
+    <div id="loginModal" class="modal-overlay">
+      <div class="modal-box">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <div class="modal-content">
+          <div class="modal-left">
+            <img src="/image/doktor.jpeg" alt="Logo Apotek" />
+          </div>
+          <div class="modal-right">
+            <h2>Selamat Datang</h2>
+            <p>Silakan masuk ke akun Anda</p>
+            <form class="login-form">
+              <input type="email" placeholder="Email" required />
+              <input type="password" placeholder="Kata Sandi" required />
+              <button type="submit">Login</button>
+              <p class="small-text">Belum punya akun? <a href="#">Daftar</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -53,7 +53,7 @@ function pilihMenu(element) {
 }
 
 const gambar = document.getElementById('gambar-berganti');
-const gambarList = ['/image/diskon.png', 'image/apoteker2.jpeg', '/image/resep.jpeg', '/image/doktor.jpeg'];
+const gambarList = ['./image/diskon.png', './image/apoteker2.jpeg', './image/resep.jpeg', './image/doktor.jpeg'];
 let a = 0;
 
 setInterval(() => {
